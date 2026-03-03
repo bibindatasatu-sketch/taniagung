@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tani Agung - Toko Obat & Peralatan Tani Terpercaya</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="overlay"></div>
+
+<header>
+    <div class="container">
+        <nav>
+            <a href="#" class="logo-container">
+                <img src="logo tani agung.png" alt="Ikon Tani Agung" class="logo-img">
+                <span class="logo-text"></span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#produk">Produk</a></li>
+                <li><a href="#tentang">Tentang</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+
+            <div style="display:flex; align-items:center; gap:20px;">
+                <button class="cart-btn-nav" onclick="toggleCart()">
+                    <i data-lucide="shopping-cart"></i>
+                    <span id="cart-count">0</span>
+                </button>
+                <a href="#produk" class="btn btn-primary">Pesan Sekarang</a>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+    <div class="container">
+        <div class="hero-content">
+            <h1>Toko Obat & Peralatan Tani Terpercaya di Ngawi</h1>
+            <p>Membantu petani mencapai hasil maksimal dengan produk berkualitas. Bisa order online & ambil langsung di toko Walikukun.</p>
+            <a href="#produk" class="btn btn-primary hero-btn">Lihat Produk Kami</a>
+        </div>
+    </div>
+</section>
+
+<!-- KATEGORI -->
+<section class="categories">
+    <div class="container">
+        <div class="section-title">
+            <h2>Kategori Produk</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="category-grid">
+            <div class="category-card">
+                <i data-lucide="flask-conical" size="48"></i>
+                <h3>Obat Tanaman</h3>
+                <p>Insektisida, Fungisida, dan Herbisida terbaik.</p>
+            </div>
+            <div class="category-card">
+                <i data-lucide="sprout" size="48"></i>
+                <h3>Pupuk</h3>
+                <p>Pupuk organik dan kimia berkualitas tinggi.</p>
+            </div>
+            <div class="category-card">
+                <i data-lucide="wrench" size="48"></i>
+                <h3>Peralatan Tani</h3>
+                <p>Alat semprot dan peralatan modern lainnya.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PRODUK -->
+<section class="products" id="produk">
+    <div class="container">
+        <div class="section-title">
+            <h2>Produk Unggulan</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="product-grid" id="product-container"></div>
+    </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features" id="tentang">
+    <div class="container">
+        <div class="feature-grid">
+            <div class="feature-item">
+                <i data-lucide="check-circle" size="40"></i>
+                <h4>Produk Asli</h4>
+                <p>Jaminan keaslian 100% dari distributor resmi.</p>
+            </div>
+            <div class="feature-item">
+                <i data-lucide="tag" size="40"></i>
+                <h4>Harga Bersaing</h4>
+                <p>Harga terbaik untuk petani lokal.</p>
+            </div>
+            <div class="feature-item">
+                <i data-lucide="messages-square" size="40"></i>
+                <h4>Konsultasi Gratis</h4>
+                <p>Tanya solusi hama gratis dengan tim ahli.</p>
+            </div>
+            <div class="feature-item">
+                <i data-lucide="map-pin" size="40"></i>
+                <h4>Mudah Dijangkau</h4>
+                <p>Lokasi strategis di Walikukun.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- LOKASI -->
+<section class="location" id="kontak">
+    <div class="container">
+        <div class="location-container">
+            <div>
+                <h2>Kunjungi Toko Kami</h2>
+                <p><strong>Alamat:</strong> Jl. Raya Walikukun, Widodaren, Kab. Ngawi</p>
+                <p><strong>Jam Buka:</strong> 07:00 - 17:00</p>
+                <p><strong>WhatsApp:</strong> 085850255105</p>
+            </div>
+            <div class="map-wrapper">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d740.5779608068821!2d111.22193585495425!3d-7.396600554547559!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e79fa450ccabd75%3A0x3c62fc03b9bb8d7a!2sToko%20Tani%20Agung!5e1!3m2!1sid!2sid!4v1772391400447!5m2!1sid!2sid" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA SECTION -->
+<section class="cta-section">
+        <div class="container">
+            <h2>Butuh Konsultasi Obat Pertanian?</h2>
+            <p style="margin-bottom: 30px;">Tim kami siap membantu Anda memilih produk yang tepat untuk tanaman Anda.</p>
+            <a href="https://wa.me/6285850255105?text=Halo%20TaniAgung,%20saya%20ingin%20konsultasi%20mengenai..." class="btn" style="background: #25d366; color: white; display: inline-flex; align-items: center; gap: 10px;">
+                <i data-lucide="message-circle"></i> Chat via WhatsApp Sekarang
+            </a>
+        </div>
+    </section>
+	
+<!-- FOOTER -->	
+<footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <span class="footer-logo">Toko Tani Agung</span>
+                    <p>Mitra terpercaya petani Ngawi. Menyediakan sarana produksi pertanian terlengkap.</p>
+                </div>
+                <div>
+                    <h4 style="color: white; margin-bottom: 20px;">Navigasi</h4>
+                    <ul style="list-style: none; line-height: 2;">
+                        <li><a href="#home" style="color: #ccc; text-decoration: none;">Beranda</a></li>
+                        <li><a href="#produk" style="color: #ccc; text-decoration: none;">Semua Produk</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 style="color: white; margin-bottom: 20px;">Layanan</h4>
+                    <p style="font-size: 0.9rem;">Toko Obat Tani Terdekat di Widodaren</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 Tani Agung Walikukun. Semua Hak Dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+	
+<!-- WA FLOAT -->
+
+<a href="https://wa.me/6285850255105" class="wa-float" target="_blank">
+    <i data-lucide="message-circle" size="32"></i>
+</a>
+
+<div id="cart-sidebar">
+    <div class="cart-header">
+        <h3>Keranjang Belanja</h3>
+        <button class="btn" onclick="toggleCart()">X</button>
+    </div>
+    <div class="cart-items" id="cart-items-list"></div>
+    <div class="cart-total">
+
+    <div style="display:flex; justify-content:space-between; margin-bottom:15px; font-weight:700;">
+        <span>Total:</span>
+        <span id="total-price">Rp 0</span>
+    </div>
+
+    <!-- INPUT NAMA PEMBELI -->
+    <div style="margin-bottom:15px;">
+        <input 
+            type="text" 
+            id="buyer-name" 
+            placeholder="Masukkan Nama dan Alamat Anda (contoh : Galuh - Walikukun)"
+            style="width:100%; padding:10px; border:1px solid #ddd; border-radius:8px;"
+        >
+    </div>
+
+    <button class="btn btn-primary" style="width:100%; border-radius:8px;" onclick="checkoutWhatsApp()">
+        Konfirmasi WhatsApp
+    </button>
+
+</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
